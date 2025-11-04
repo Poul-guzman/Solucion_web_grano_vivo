@@ -1,0 +1,186 @@
+/*
+====================================
+  ESTILOS GLOBALES Y RESET
+====================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para compensar el menú fijo (si decides hacerlo fijo) 
+  Esto asegura que el ancla de navegación (#nosotros, #tienda) aterrice
+  justo debajo del menú.
+*/
+section {
+    scroll-margin-top: 120px; 
+}
+
+
+/*
+====================================
+  ESTILOS DE BARRA DE NAVEGACIÓN (HEADER)
+====================================
+*/
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    /* Si quieres que el menú siempre esté visible, descomenta las líneas de abajo: */
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; */
+}
+.logo {
+    height: 100px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Espacio entre los elementos del menú */
+}
+.menu a {
+    font-size: 20px;
+    display: flex;
+    padding: 5px 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición para efecto hover */
+}
+.menu a:hover {
+    color: chocolate; /* Efecto al pasar el mouse */
+}
+
+
+/*
+====================================
+  ESTILOS DE SECCIÓN DE FONDO (BANNER)
+====================================
+*/
+.imagenfondo{
+    background-image: url(../img/imagenfondocafe3.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /* Alineación del texto al final (abajo) */
+    justify-content: flex-end; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0 20px;
+}
+.imagenfondo h1 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor lectura */
+}
+.imagenfondo h2 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para mejor lectura */
+}
+
+
+/*
+====================================
+  ESTILOS DE CARRITO FLOTANTE
+====================================
+*/
+.carrito {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    border-radius: 50%;
+    pointer-events: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para destacar */
+    transition: transform 0.3s ease;
+}
+.carrito:hover {
+    transform: scale(1.1);
+}
+
+/* El contenedor del enlace del carrito */
+.boton-carrito {
+    display: inline-block;
+}
+
+.contador-carrito {
+    position: fixed;
+    bottom: 18px; 
+    right: 15px; /* <--- Asegúrate de que no haya un espacio extra aquí */
+    background-color: chocolate;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    z-index: 1001;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+/*
+====================================
+  ESTILOS DEL CONTENIDO PRINCIPAL (MAIN)
+====================================
+*/
+/* Estilos para las imágenes de las tarjetas de productos */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Altura fija para uniformidad de las tarjetas */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Ajuste de color para el botón principal de la tienda, si quieres usar tu color 'chocolate' */
+.btn-primary {
+    background-color: chocolate !important; /* Usa tu color */
+    border-color: chocolate !important;
+}
+.btn-primary:hover {
+    background-color: #a0522d !important; /* Un tono más oscuro de chocolate para hover */
+    border-color: #a0522d !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+/*
+====================================
+  ESTILOS DEL FOOTER
+====================================
+*/
+/* No se necesitan muchos estilos CSS ya que estamos usando clases de Bootstrap (bg-dark, text-white, etc.) */
+/* Asegúrate de que los enlaces dentro del footer se vean bien */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: chocolate !important; /* Destacar enlaces con el color de tu marca */
+}

@@ -40,3 +40,35 @@ footer a {
 footer a:hover {
     color: chocolate !important; /* Destacar enlaces con el color de tu marca */
 }
+
+.contactanos {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    padding-right: 1rem; /* separación entre columnas */
+    
+}
+
+/* Selecciona el container que sigue inmediatamente a .contactanos */
+.contactanos + .container.mt-5 {
+    float: right;
+    width: 58%;
+    box-sizing: border-box;
+    max-width: none; /* anula posibles max-width inline o de .container */
+}
+
+/* Asegura que el footer quede debajo de los floats */
+footer {
+    clear: both;
+}
+
+/* Responsive: en pantallas pequeñas se apilan verticalmente */
+@media (max-width: 767.98px) {
+    .contactanos,
+    .contactanos + .container.mt-5 {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+}

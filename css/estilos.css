@@ -65,7 +65,7 @@ section {
 .imagenfondo{
     background-image: url(../img/imagenfondocafe3.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
     /* Alineación del texto al final (abajo) */
     justify-content: flex-end; 
@@ -73,7 +73,7 @@ section {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 0 20px;
+    padding: 100px 100px;
 }
 .imagenfondo h1 {
     font-family: 'Arial', Helvetica, sans-serif;

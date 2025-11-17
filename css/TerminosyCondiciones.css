@@ -40,11 +40,21 @@ footer a {
 footer a:hover {
     color: chocolate !important; /* Destacar enlaces con el color de tu marca */
 }
-
-.copyrights {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    color: white;
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1,h2,h3,h4{
+    color: #4B2E0F; /* Color marrón oscuro */
+    text-align: left;
+    margin-bottom: 20px;
+}
+.Texto {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Separación entre texto e imagen */
 }

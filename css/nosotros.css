@@ -79,3 +79,11 @@ h1, h2 {
 .contactanos {
     text-align: left;
 }
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+}

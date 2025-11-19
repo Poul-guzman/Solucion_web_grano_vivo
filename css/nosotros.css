@@ -54,6 +54,20 @@ h1, h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+.texto-imagen {
+    display: flex;
+    align-items: center; /* Alinea el texto y las imágenes al centro verticalmente */
+    justify-content: space-between; /* Deja espacio entre el texto y las imágenes */
+    margin-bottom: 30px;
+}
+.Texto {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Separación entre texto e imagen */
+}
 
 .imagenes {
     display: flex;
@@ -64,4 +78,12 @@ h1, h2 {
 
 .contactanos {
     text-align: left;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
 }

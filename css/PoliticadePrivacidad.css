@@ -10,7 +10,9 @@
     top: 0;
     z-index: 1000; */
 }
-
+.logo {
+    height: 100px;
+}
 .menu{
     display: flex;
     align-items: center;
@@ -28,17 +30,25 @@
 .menu a:hover {
     color: chocolate; /* Efecto al pasar el mouse */
 }
-
-.logo {
-    height: 100px;
+h1,h2,h3,h4{
+    color: #4B2E0F; /* Color marrón oscuro */
+    text-align: left;
+    margin-bottom: 20px;
 }
-
-footer a {
-    transition: color 0.3s ease;
+p{
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
-
-footer a:hover {
-    color: chocolate !important; /* Destacar enlaces con el color de tu marca */
+.Texto {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Separación entre texto e imagen */
+}
+.contactanos {
+    text-align: left;
 }
 
 .copyrights {

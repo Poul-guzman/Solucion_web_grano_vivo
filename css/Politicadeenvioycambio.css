@@ -35,10 +35,6 @@ h1,h2,h3,h4{
     text-align: left;
     margin-bottom: 20px;
 }
-p{
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
 .Texto {
     flex: 1; /* Ocupa el espacio disponible */
     padding: 20px;
@@ -46,9 +42,6 @@ p{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px; /* Separación entre texto e imagen */
-}
-.contactanos {
-    text-align: left;
 }
 
 .copyrights {

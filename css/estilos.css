@@ -184,3 +184,11 @@ footer a {
 footer a:hover {
     color: chocolate !important; /* Destacar enlaces con el color de tu marca */
 }
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+}

@@ -2,6 +2,7 @@
 <html lang="es">
 
 <!-- no hay ningun error en contacto.html -->
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -85,18 +86,13 @@
                     <h5 class="text-uppercase mb-4 fw-bold text-warning">
                         Enlaces Rápidos
                     </h5>
-                    <p>
-                        <a href="./nosotros.html" class="text-white" style="text-decoration: none">Nosotros</a>
-                    </p>
-                    <p>
-                        <a href="./Tienda.html" class="text-white" style="text-decoration: none">Tienda</a>
-                    </p>
-                    <p>
-                        <a href="./index.html" class="text-white" style="text-decoration: none">Inicio</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none">Política de Privacidad</a>
-                    </p>
+                    <p><a href="./nosotros.html" class="text-white" style="text-decoration: none">Nosotros</a></p>
+                    <p><a href="./Tienda.html" class="text-white" style="text-decoration: none">Tienda</a></p>
+                    <p><a href="./index.html" class="text-white" style="text-decoration: none">Inicio</a></p>
+                    <p><a href="./PoliticadePrivacidad.html" class="text-white" style="text-decoration: none;">Política de Privacidad</a></p>
+                    <p><a href="./TerminosyCondiciones.html" class="text-white" style="text-decoration: none;">Terminos y condiciones</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration: none;">Politica de envio y cambio</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration: none;">Libro de reclamaciones</a></p>
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -119,34 +115,17 @@
             </div>
 
             <hr class="mb-4" />
-            <div class="row align-items-center">
+            <div class="copyrights">
                 <div class="col-md-7 col-lg-8">
-                    <p>
-                        Derechos de Autor © 2025 Grano Vivo Selecto. Todos los derechos
-                        reservados.
-                    </p>
+                    <p>Derechos de Autor © 2025 Grano Vivo Selecto. Todos los derechos reservados.</p>
                 </div>
-                <div class="col-md-5 col-lg-4"></div>
             </div>
         </div>
     </footer>
 
     <!-- ======== SCRIPTS ======== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Mensaje de confirmación del formulario
-        document
-            .getElementById("form-contacto")
-            .addEventListener("submit", function (e) {
-                e.preventDefault();
-                const alerta = document.getElementById("alerta");
-                alerta.classList.remove("d-none");
-                this.reset();
-                setTimeout(() => {
-                    alerta.classList.add("d-none");
-                }, 4000);
-            });
-    </script>
+    <script src="./js/alerta.js"></script>
 </body>
 
 </html>

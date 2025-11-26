@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(73, 35, 0);
+}
+
+p, h1 {
+    font-weight: bold;
+}
+
+input, select {
+    width: 1000px;
+}
+
+form {
+    text-align: center;
+}
+
+.observaciones {
+    height: 250px;
+}

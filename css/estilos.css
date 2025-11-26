@@ -17,49 +17,6 @@ section {
     scroll-margin-top: 120px; 
 }
 
-
-/*
-====================================
-  ESTILOS DE BARRA DE NAVEGACIÓN (HEADER)
-====================================
-*/
-.barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 10px 20px;
-    /* Si quieres que el menú siempre esté visible, descomenta las líneas de abajo: */
-    /* position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000; */
-}
-.logo {
-    height: 100px;
-    border-radius: 60%; /* recorta en círculo */
-    object-fit: cover; 
-    filter:  drop-shadow 2px 5px rgba(0,0,0,0.5); /* sombra para destacar */
-}
-.menu{
-    display: flex;
-    align-items: center;
-    gap: 100px; /* Espacio entre los elementos del menú */
-}
-.menu a {
-    font-size: 20px;
-    display: flex;
-    padding: 5px 5px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Transición para efecto hover */
-}
-.menu a:hover {
-    color: chocolate; /* Efecto al pasar el mouse */
-}
-
-
 /*
 ====================================
   ESTILOS DE SECCIÓN DE FONDO (BANNER)
@@ -171,27 +128,4 @@ form {
 textarea {
     resize: none;
     height: 150px;
-}
-
-/*
-====================================
-  ESTILOS DEL FOOTER
-====================================
-*/
-/* No se necesitan muchos estilos CSS ya que estamos usando clases de Bootstrap (bg-dark, text-white, etc.) */
-/* Asegúrate de que los enlaces dentro del footer se vean bien */
-footer a {
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: chocolate !important; /* Destacar enlaces con el color de tu marca */
-}
-
-.copyrights {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    color: white;
 }

@@ -1,3 +1,5 @@
+/* HEADER BARRA */
+
 .barra {
     display: flex;
     justify-content: space-between;
@@ -5,12 +7,17 @@
     background-color: black;
     padding: 10px 20px;
     /* Si quieres que el menú siempre esté visible, descomenta las líneas de abajo: */
-    /* position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
-    z-index: 1000; */
+    z-index: 1000; 
 }
-
+.logo {
+    height: 100px;
+    border-radius: 60%; /* recorta en círculo */
+    object-fit: cover; 
+    filter:  drop-shadow 2px 5px rgba(0,0,0,0.5); /* sombra para destacar */
+}
 .menu{
     display: flex;
     align-items: center;
@@ -29,9 +36,7 @@
     color: chocolate; /* Efecto al pasar el mouse */
 }
 
-.logo {
-    height: 100px;
-}
+/* FOOTER */
 
 footer a {
     transition: color 0.3s ease;
@@ -39,4 +44,12 @@ footer a {
 
 footer a:hover {
     color: chocolate !important; /* Destacar enlaces con el color de tu marca */
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
 }

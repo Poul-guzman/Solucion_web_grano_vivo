@@ -1,0 +1,189 @@
+/* GENERAL */
+:root {
+    --bg: #fff7ef;
+    --accent: #7b3f00;
+    --muted: #5b5b5b;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+}
+
+/* BARRA SUPERIOR */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    /* Si quieres que el menú siempre esté visible, descomenta las líneas de abajo: */
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; */
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Espacio entre los elementos del menú */
+}
+.menu a {
+    font-size: 20px;
+    display: flex;
+    padding: 5px 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición para efecto hover */
+}
+.menu a:hover {
+    color: chocolate; /* Efecto al pasar el mouse */
+}
+
+.logo {
+    height: 100px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: chocolate !important; /* Destacar enlaces con el color de tu marca */
+}
+
+/* CONTENIDO */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* POPUP */
+#exit-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+}
+
+#exit-modal {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 520px;
+    width: 100%;
+    animation: pop 0.3s ease-out;
+}
+
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* CABECERA DEL MODAL */
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.popup-logo {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #8b4a20, #5a2a08);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.close-x {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* BLOQUE DESTACADO */
+.highlight {
+    display: flex;
+    justify-content: space-between;
+    background: #fff3e6;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 14px 0;
+    border: 1px solid #f1d7c3;
+}
+
+.code {
+    font-size: 18px;
+    color: var(--accent);
+}
+
+/* LISTA */
+.check {
+    list-style: none;
+    padding: 0;
+}
+
+.check li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px dashed #e5d5c1;
+    padding: 8px 0;
+}
+
+.dot {
+    width: 26px;
+    height: 26px;
+    background: #fbe4d0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* FORMULARIO */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 8px;
+}
+
+.cta-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btn-ghost {
+    background: white;
+    border: 1px solid #ccc;
+    color: var(--accent);
+}
+
+.small {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--muted);
+}

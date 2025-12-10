@@ -1,0 +1,56 @@
+/* Barra del menú */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+.logo {
+    height: 100px;
+}
+.menu {
+    display: flex;
+    gap: 100px;
+}
+.menu a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: chocolate;
+}
+
+/* NUEVO — CONTENEDOR IZQUIERDA / DERECHA */
+.reclamo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+.Librodereclamaciones {
+    flex: 1;
+    max-width: 40%;
+}
+
+.formulario-reclamo {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Tamaño del cuadro */
+.formulario-reclamo .card {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+}
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: chocolate !important; /* Destacar enlaces con el color de tu marca */
+}

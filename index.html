@@ -10,22 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/HeaderFooter.css">
-
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/loader.css">
 </head>
 
 <body>
-
-    <div class="barra">
-        <img src="./img/Imagen de WhatsApp 2025-10-06 a las 15.36.05_49e00a52.jpg" alt="logo cafe" class="logo">
-        <nav class="menu">
-            <a href="#inicio">Inicio</a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./Tienda.html">Tienda</a>
-            <a href="./contacto.html">Contáctanos</a>
-            <a href="./cuenta.html">Mi Cuenta</a>
-        </nav>
+    <div id="site-loader" aria-hidden="true">
+        <div class="loader-content">
+            <img src="./img/Imagen de WhatsApp 2025-10-06 a las 15.36.05_49e00a52.jpg" alt="logo" class="loader-logo">
+            <div class="spinner" role="status" aria-label="Cargando"></div>
+        </div>
     </div>
+
+    <!-- HEADER -->
+    <div id="header"></div>
 
     <section id="inicio" class="imagenfondo">
         <main class="container my-5">
@@ -44,7 +42,7 @@
             <h2 class="text-center mb-4">Nuestra Historia</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>En **Grano Vivo Selecto** creemos que el café es más que una bebida, es una experiencia. Nacimos
+                    <p>En <strong>Grano Vivo Selecto</strong> creemos que el café es más que una bebida, es una experiencia. Nacimos
                         de la pasión por los granos de alta calidad, cosechados con métodos sostenibles y tostados a la
                         perfección.</p>
                     <p>Nuestro compromiso es llevar a tu taza el sabor auténtico y vibrante del mejor café de origen.
@@ -101,7 +99,7 @@
                 </div> <!-- /.row -->
 
                 <div class="text-center mt-3">
-                    <a href="productos" class="btn btn-lg btn-outline-dark">Ver Todos los Productos</a>
+                    <a href="Tienda.html" class="btn btn-lg btn-outline-dark">Ver Todos los Productos</a>
                 </div>
             </div> <!-- /.container -->
         </section>
@@ -136,62 +134,13 @@
         <span class="contador-carrito">0</span>
     </a>
 
-    <footer class="bg-dark text-white pt-5 pb-4">
-        <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img src="./img/Imagen de WhatsApp 2025-10-06 a las 15.36.05_49e00a52.jpg" alt="logo cafe" class="logo">
-                    <p>
-                        <br>
-                    </p>
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Grano Vivo Selecto</h5>
-                    <p>Tu destino para el mejor café de origen. Calidad y sabor garantizados en cada taza.</p>
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Nuestros metodos de pago</h5>
-                    <div class="d-flex gap-3" style="padding-left: 25px;">
-                        <img src="./img/mastercard.png" alt="mastercard.png" style="width: 50px; height: 35px;">
-                        <img src="./img/visa.png" alt="mastercard.png" style="width: 50px; height: 35px;">
-                        <img src="./img/yape.png" alt="mastercard.png" style="width: 50px;">
-                        <img src="./img/plin.jpg" alt="mastercard.png" style="width: 50px;">
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Enlaces Rápidos</h5>
-                    <p><a href="./nosotros.html" class="text-white" style="text-decoration: none;">Nosotros</a></p>
-                    <p><a href="./Tienda.html" class="text-white" style="text-decoration: none;">Tienda</a></p>
-                    <p><a href="./contacto.html" class="text-white" style="text-decoration: none;">Contáctanos</a></p>
-                    <p><a href="./PoliticadePrivacidad.html" class="text-white" style="text-decoration: none;">Política
-                            de Privacidad</a></p>
-                    <p><a href="./TerminosyCondiciones.html" class="text-white" style="text-decoration: none;">Terminos
-                            y condiciones</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Politica de envio y cambio</a></p>
-                    <p><a href="#" class="text-white" style="text-decoration: none;">Libro de reclamaciones</a></p>
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Contacto</h5>
-                    <p><i class="fas fa-home me-2"></i> 123 Calle del Café, Tueste, CO 10001</p>
-                    <p><i class="fas fa-envelope me-2"></i> granovivoselecto@gmail.com</p>
-                    <p><i class="fas fa-phone me-2"></i> +51 937048099</p>
-                    <p><i class="fab fa-whatsapp me-2"></i> +51 937048099 (Nuestro WhatsApp)</p>
-                    <p><i class="fab fa-instagram me-2"></i> @grano_vivo_selecto</p>
-                    <p><i class="fab fa-facebook me-2"></i> GranoVivoSelecto_oficial</p>
-
-                </div>
-            </div>
-
-            <hr class="mb-4">
-            <div class="copyrights">
-                <div class="col-md-7 col-lg-8">
-                    <p>Derechos de Autor © 2025 Grano Vivo Selecto. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="js/HFer.js"></script>
 
 </body>
 

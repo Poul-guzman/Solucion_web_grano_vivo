@@ -3,26 +3,32 @@
     width: 40%;
     box-sizing: border-box;
     padding-right: 1rem; /* separación entre columnas */
-    
+    margin-top: 150px; /* baja un poco el bloque */
+    margin-left: 5%; /* desplaza ligeramente a la derecha */
 }
 
 /* Selecciona el container que sigue inmediatamente a .contactanos */
 .contactanos + .container.mt-5 {
-    float: right;
-    width: 58%;
-    box-sizing: border-box;
-    max-width: none; /* anula posibles max-width inline o de .container */
+  float: right;
+  width: 58%;
+  box-sizing: border-box;
+  max-width: none; /* anula posibles max-width inline o de .container */
+  margin-right: 5rem; /* espacio entre formulario y borde derecho */
+  margin-bottom: 5rem; /* espacio debajo del formulario antes del mapa */
 }
 
 /* Responsive: en pantallas pequeñas se apilan verticalmente */
 @media (max-width: 767.98px) {
-    .contactanos,
-    .contactanos + .container.mt-5 {
-        float: none;
-        width: 100%;
-        max-width: 100%;
-        padding-right: 0;
-    }
+  .contactanos,
+  .contactanos + .container.mt-5 {
+
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .map-container {

@@ -1,4 +1,4 @@
-/* HEADER BARRA */
+/* HEADER */
 
 .barra {
     display: flex;
@@ -30,10 +30,13 @@
     background-color: black;
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease; /* Transición para efecto hover */
+    transition: color 0.2s ease, transform 0.15s ease;
+    will-change: transform;
+    transform-origin: center;
 }
 .menu a:hover {
     color: chocolate; /* Efecto al pasar el mouse */
+    transform: scale(1.08);
 }
 
 /* FOOTER */

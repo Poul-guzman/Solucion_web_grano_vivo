@@ -48,50 +48,6 @@ section {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para mejor lectura */
 }
 
-
-/*
-====================================
-  ESTILOS DE CARRITO FLOTANTE
-====================================
-*/
-.carrito {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-    border-radius: 50%;
-    pointer-events: auto; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para destacar */
-    transition: transform 0.3s ease;
-}
-.carrito:hover {
-    transform: scale(1.1);
-}
-
-/* El contenedor del enlace del carrito */
-.boton-carrito {
-    display: inline-block;
-}
-
-.contador-carrito {
-    position: fixed;
-    bottom: 18px; 
-    right: 15px; /* <--- Asegúrate de que no haya un espacio extra aquí */
-    background-color: chocolate;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 18px;
-    z-index: 1001;
-    box-shadow: 0 0 4px rgba(0,0,0,0.3);
-}
-
 /*
 ====================================
     ESTILOS DEL CONTENIDO PRINCIPAL (MAIN)
